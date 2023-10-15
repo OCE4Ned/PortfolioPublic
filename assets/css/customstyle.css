@@ -1,0 +1,145 @@
+:root {
+    --main-bg-color: #201d1d;
+}
+
+header, main, footer, body{
+    background-color: var(--main-bg-color);
+    color:white;
+}
+
+main
+{
+    height: 100%;
+}
+
+nav
+{
+    background-color: var(--main-bg-color);
+    color:white;
+}
+
+nav li
+{
+    transition: all 0.25s ease-in-out;
+    border-radius: 20px;
+}
+
+nav li:hover
+{
+    background-color: white;
+    color:black;
+}
+
+.custom-button
+{
+    border-radius: 20px;
+}
+
+.burger-icon
+{
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    filter:invert(1);
+}
+
+.content-separator
+{
+    width: 90%;
+    border-top:2px solid white;
+}
+
+#playercontainer
+{
+    height: 400px;
+}
+
+#topbutton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+#topbutton:hover {
+    background-color: #555;
+}
+
+.card
+{
+    color:black
+}
+
+.card img
+{
+    max-height: 20vh;
+    object-fit: cover;
+}
+
+.skills-list li
+{
+    background-color: var(--main-bg-color);
+    color:white;
+    border-color: white;
+}
+
+.skills-list i
+{
+    font-size: 35px;
+    margin-right: 10px;
+}
+.col
+{
+    transition: top, 0.5s ease-in-out;
+}
+.col:hover
+{
+    transform: translateY(-5%);
+    cursor:pointer;
+}
+
+.csmi-gif
+{
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    #playercontainer
+    {
+        height: 390px;
+    }
+}
+
+@media (min-width: 768px) {
+    #playercontainer
+    {
+        height: 490px;
+    }
+}
+
+@media (min-width: 992px) {
+    #playercontainer
+    {
+        height: 625px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #playercontainer
+    {
+        height: 725px;
+    }
+}
+
+@media (min-width: 1400px) {
+    #playercontainer
+    {
+        height: 825px;
+    }
+}
